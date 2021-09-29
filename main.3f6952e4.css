@@ -49,6 +49,7 @@ template {
 }
 a {
   background-color: transparent;
+
 }
 a:active,
 a:hover {
@@ -301,7 +302,12 @@ img {
 }
 .img-responsive {
   display: block;
-  max-width: 100%;
+  max-width: 25%;
+  height: auto;
+}
+.img-responsive-full {
+  display: block;
+  max-width: 90%;
   height: auto;
 }
 .img-rounded {
@@ -767,6 +773,7 @@ pre code {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  float: center;
 }
 .container:after,
 .container:before {
@@ -3547,9 +3554,14 @@ tbody.collapse.in {
 .navbar-fixed-top {
   position: fixed;
   right: 0;
-  left: 0;
+
   z-index: 1030;
 }
+
+.new{
+  vertical-align: middle;
+}
+
 @media (min-width: 768px) {
   .navbar-fixed-bottom,
   .navbar-fixed-top {
@@ -3885,6 +3897,7 @@ fieldset[disabled] .navbar-default .btn-link:hover {
 .navbar-inverse {
   background-color: transparent;
   border-color: transparent;
+  margin-left: 50%;
 }
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;
@@ -3896,7 +3909,7 @@ fieldset[disabled] .navbar-default .btn-link:hover {
 }
 .navbar-inverse .navbar-nav > li > a,
 .navbar-inverse .navbar-text {
-  color: #9d9d9d;
+  color: #fff;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:focus,
@@ -3904,7 +3917,7 @@ fieldset[disabled] .navbar-default .btn-link:hover {
 .navbar-inverse .navbar-nav > li > a:focus,
 .navbar-inverse .navbar-nav > li > a:hover {
   color: #fff;
-  background-color: transparent;
+  background-color: #bb3c3c00;
 }
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:focus,
@@ -4796,7 +4809,7 @@ body.minimal {
 }
 @media (min-width: 1200px) {
   .section-container {
-    padding: 80px 0;
+    padding: 150px 0;
   }
 }
 .section-container.only-container {
@@ -5057,8 +5070,7 @@ textarea {
 @media (min-width: 768px) {
   .navbar-default .navbar-collapse,
   .navbar-inverse .navbar-collapse {
-    margin: 0;
-    padding: 30px 0;
+    margin: 20px;
   }
   .navbar-default .navbar-collapse .navbar-nav,
   .navbar-inverse .navbar-collapse .navbar-nav {
