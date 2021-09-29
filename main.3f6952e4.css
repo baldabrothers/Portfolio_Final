@@ -302,7 +302,7 @@ img {
 }
 .img-responsive {
   display: block;
-  max-width: 46%;
+  max-width: 55%;
   height: auto;
 }
 .img-responsive-full {
